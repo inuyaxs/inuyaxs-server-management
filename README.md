@@ -1,16 +1,16 @@
 <div align="center">
 
-# 🟣 Inuyaxs Server Management
+# 🔴 Inuyaxs Server Management
 
 **Crea y administra servidores de Minecraft directamente desde tu teléfono Android.**
-Sin PC, sin Termux, sin configurar nada a mano.
+Sin PC y sin configurar nada a mano.
 
-[![Última versión](https://img.shields.io/github/v/release/inuyaxs/inuyaxs-server-management?style=for-the-badge&color=8B7CFF&label=versi%C3%B3n)](https://github.com/inuyaxs/inuyaxs-server-management/releases/latest)
-[![Descargas](https://img.shields.io/github/downloads/inuyaxs/inuyaxs-server-management/total?style=for-the-badge&color=3DDC84&label=descargas)](https://github.com/inuyaxs/inuyaxs-server-management/releases)
-[![Licencia](https://img.shields.io/github/license/inuyaxs/inuyaxs-server-management?style=for-the-badge&color=blue)](LICENSE)
-![Android 5.0+](https://img.shields.io/badge/Android-5.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![Material 3](https://img.shields.io/badge/Material-3-6750A4?style=for-the-badge&logo=materialdesign&logoColor=white)
+[![Última versión](https://img.shields.io/github/v/release/inuyaxs/inuyaxs-server-management?style=for-the-badge&color=E53935&label=versi%C3%B3n)](https://github.com/inuyaxs/inuyaxs-server-management/releases/latest)
+[![Descargas](https://img.shields.io/github/downloads/inuyaxs/inuyaxs-server-management/total?style=for-the-badge&color=C62828&label=descargas)](https://github.com/inuyaxs/inuyaxs-server-management/releases)
+[![Licencia](https://img.shields.io/github/license/inuyaxs/inuyaxs-server-management?style=for-the-badge&color=B71C1C)](LICENSE)
+![Android 5.0+](https://img.shields.io/badge/Android-5.0%2B-D32F2F?style=for-the-badge&logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-E53935?style=for-the-badge&logo=kotlin&logoColor=white)
+![Material 3](https://img.shields.io/badge/Material-3-C62828?style=for-the-badge&logo=materialdesign&logoColor=white)
 
 ### [⬇️ Descargar el APK](https://github.com/inuyaxs/inuyaxs-server-management/releases/latest)
 
@@ -83,52 +83,9 @@ Los datos de los servidores se guardan en el almacenamiento interno de la app (`
 ## 🧩 Cómo funciona por dentro
 
 - **Paper** se descarga desde la API oficial.
-- **OpenJDK aarch64** (17/21, compilado para Android) se descarga de los paquetes oficiales del repositorio de Termux. Solo se bajan los archivos; Termux no hace falta y no se usa.
+- **OpenJDK aarch64** (17/21, compilado para Android) se descarga de paquetes oficiales la primera vez que se necesita.
 - Java se ejecuta con `ProcessBuilder` desde la carpeta privada de la app, y se genera un almacén de certificados a partir de los de Android para que Java pueda usar HTTPS.
 - El agente de Playit se descarga una vez y se detiene junto con el servidor.
-
-## 🛠️ Compilar desde Termux (solo para compilar)
-
-<details>
-<summary>Ver los pasos</summary>
-
-1. OpenJDK 17 y utilidades:
-   ```bash
-   pkg update && pkg install openjdk-17 wget unzip git
-   ```
-2. Android SDK (command-line tools para Linux ARM):
-   ```bash
-   mkdir -p ~/android-sdk/cmdline-tools && cd ~/android-sdk/cmdline-tools
-   wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
-   unzip commandlinetools-linux-*.zip && mv cmdline-tools latest
-   export ANDROID_HOME=$HOME/android-sdk
-   export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
-   yes | sdkmanager --licenses
-   ```
-3. Plataforma y build-tools:
-   ```bash
-   sdkmanager "platforms;android-35" "build-tools;35.0.0" "platform-tools"
-   ```
-4. Gradle 8.10 / Wrapper:
-   ```bash
-   pkg install gradle          # o descarga Gradle 8.10 manualmente
-   gradle wrapper --gradle-version 8.10
-   chmod +x gradlew
-   ```
-5. AAPT2 para ARM (los binarios de Maven son x86):
-   ```bash
-   pkg install aapt2
-   echo "android.aapt2FromMavenOverride=$PREFIX/bin/aapt2" >> gradle.properties
-   echo "sdk.dir=$HOME/android-sdk" > local.properties
-   ```
-6. Compilar:
-   ```bash
-   ./gradlew assembleRelease
-   ```
-7. APK resultante (firmado con la clave debug para poder instalarlo):
-   `app/build/outputs/apk/release/Inuyaxs Server Management.apk`
-
-</details>
 
 ## 🐛 Problemas y sugerencias
 
@@ -144,4 +101,4 @@ Proyecto independiente. **No está afiliado, aprobado ni patrocinado por Mojang 
 
 ---
 
-<div align="center">Hecho con 💜 por <b>Inuyaxs</b></div>
+<div align="center">Hecho con ♥️ por <b>Inuyaxs</b></div>
