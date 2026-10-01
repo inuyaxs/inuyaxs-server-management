@@ -5,14 +5,14 @@
 **Crea y administra servidores de Minecraft directamente desde tu teléfono Android.**
 Sin PC, sin Termux, sin configurar nada a mano.
 
-[![Última versión](https://img.shields.io/github/v/release/herreralucianoalberto-star/inuyaxs-server-management?style=for-the-badge&color=8B7CFF&label=versi%C3%B3n)](https://github.com/herreralucianoalberto-star/inuyaxs-server-management/releases/latest)
-[![Descargas](https://img.shields.io/github/downloads/herreralucianoalberto-star/inuyaxs-server-management/total?style=for-the-badge&color=3DDC84&label=descargas)](https://github.com/herreralucianoalberto-star/inuyaxs-server-management/releases)
-[![Licencia](https://img.shields.io/github/license/herreralucianoalberto-star/inuyaxs-server-management?style=for-the-badge&color=blue)](LICENSE)
+[![Última versión](https://img.shields.io/github/v/release/inuyaxs/inuyaxs-server-management?style=for-the-badge&color=8B7CFF&label=versi%C3%B3n)](https://github.com/inuyaxs/inuyaxs-server-management/releases/latest)
+[![Descargas](https://img.shields.io/github/downloads/inuyaxs/inuyaxs-server-management/total?style=for-the-badge&color=3DDC84&label=descargas)](https://github.com/inuyaxs/inuyaxs-server-management/releases)
+[![Licencia](https://img.shields.io/github/license/inuyaxs/inuyaxs-server-management?style=for-the-badge&color=blue)](LICENSE)
 ![Android 5.0+](https://img.shields.io/badge/Android-5.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Material 3](https://img.shields.io/badge/Material-3-6750A4?style=for-the-badge&logo=materialdesign&logoColor=white)
 
-### [⬇️ Descargar el APK](https://github.com/herreralucianoalberto-star/inuyaxs-server-management/releases/latest)
+### [⬇️ Descargar el APK](https://github.com/inuyaxs/inuyaxs-server-management/releases/latest)
 
 </div>
 
@@ -45,7 +45,7 @@ Sin PC, sin Termux, sin configurar nada a mano.
 
 ## 📲 Instalación
 
-1. Ve a **[Releases](https://github.com/herreralucianoalberto-star/inuyaxs-server-management/releases/latest)** y descarga el `.apk` de la última versión.
+1. Ve a **[Releases](https://github.com/inuyaxs/inuyaxs-server-management/releases/latest)** y descarga el `.apk` de la última versión.
 2. Ábrelo. Si Android lo pide, permite **instalar apps de fuentes desconocidas** para tu navegador.
 3. Abre la app, crea tu servidor y pulsa **Iniciar Servidor**.
 
@@ -132,7 +132,7 @@ Los datos de los servidores se guardan en el almacenamiento interno de la app (`
 
 ## 🐛 Problemas y sugerencias
 
-¿Algo no funciona o quieres proponer una mejora? Abre un [issue](https://github.com/herreralucianoalberto-star/inuyaxs-server-management/issues/new/choose). Si es un error, incluye tu versión de Android, la versión de la app y lo que muestra la consola del servidor.
+¿Algo no funciona o quieres proponer una mejora? Abre un [issue](https://github.com/inuyaxs/inuyaxs-server-management/issues/new/choose). Si es un error, incluye tu versión de Android, la versión de la app y lo que muestra la consola del servidor.
 
 ## 📄 Licencia
 
