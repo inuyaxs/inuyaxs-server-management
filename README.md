@@ -93,7 +93,7 @@ Los datos de los servidores se guardan en el almacenamiento interno de la app (`
 
 ## 📄 Licencia
 
-Distribuido bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE).
+Distribuido bajo la licencia **Source-available. All rights reserved.**. Consulta el archivo [LICENSE](LICENSE).
 
 ## ⚠️ Aviso
 
